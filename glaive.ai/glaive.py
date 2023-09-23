@@ -41,6 +41,6 @@ def get_response(prompt , model = "GPT-4", maxTokens = 1024, temperature = 0.1):
         return assistant_message
     else:
         return None
-
-respanse = get_response("how are you", model = "GPT-3.5")
-print(respanse)
+if __name__ == "__main__":
+    respanse = get_response("how are you", model = "GPT-3.5")
+    print(respanse)
