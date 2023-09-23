@@ -40,7 +40,7 @@ def get_response(prompt , model = "GPT-4", maxTokens = 1024, temperature = 0.1):
         assistant_message = response_json['messages'][1]['content']
         return assistant_message
     else:
-        return None
+        return "server error"
 if __name__ == "__main__":
     respanse = get_response("how are you", model = "GPT-3.5")
     print(respanse)
