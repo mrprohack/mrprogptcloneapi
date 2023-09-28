@@ -47,5 +47,5 @@ def get_response(prompt, model="GPT-3.5", maxTokens=1024, temperature=0.1):
 
 
 if __name__ == "__main__":
-    respanse = get_response("how are you", model="GPT-3.5")
-    print(respanse)
+    print(get_response(
+        "how are you and what are you doing", model="GPT-3.5"))
